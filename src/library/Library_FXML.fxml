@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" fx:id="rootpane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="492.0" prefWidth="568.0" style="-fx-background-color: #2d3447;" xmlns="http://javafx.com/javafx/8.0.60" xmlns:fx="http://javafx.com/fxml/1" fx:controller="library.FXMLController">
+   <children>
+      <ImageView fitHeight="128.0" fitWidth="128.0" layoutX="381.0" layoutY="322.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@users.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="128.0" fitWidth="128.0" layoutX="67.0" layoutY="29.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@clipboard.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="128.0" fitWidth="128.0" layoutX="380.0" layoutY="42.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@bookshelf.png" />
+         </image>
+      </ImageView>
+      <JFXButton buttonType="RAISED" layoutX="76.0" layoutY="173.0" onAction="#handleListButtonAction" text="Borrower's List" textFill="#a0a2ab" />
+      <JFXButton buttonType="RAISED" layoutX="422.0" layoutY="173.0" onAction="#handleStockButtonAction" text="Stock" textFill="#a0a2ab" />
+      <JFXButton buttonType="RAISED" layoutX="416.0" layoutY="459.0" onAction="#handleProfileButtonAction" text="Profile" textFill="#a0a2ab" />
+      <JFXButton layoutX="376.0" layoutY="322.0" onAction="#handleProfileButtonAction" opacity="0.0" prefHeight="128.0" prefWidth="138.0" text=" " />
+      <ImageView fx:id="reg" fitHeight="96.0" fitWidth="144.0" layoutX="73.0" layoutY="331.0" pickOnBounds="true" preserveRatio="true"> 
+        <image> <Image url="@boy_1.png" />  
+        </image>
+       </ImageView>
+      <JFXButton layoutX="380.0" layoutY="51.0" onAction="#handleStockButtonAction" opacity="0.0" prefHeight="110.0" prefWidth="128.0" text=" " />
+      <JFXButton layoutX="84.0" layoutY="331.0" minHeight="-Infinity" minWidth="-Infinity" onAction="#openReg" opacity="0.0" prefHeight="96.0" prefWidth="79.0" text=" " />
+      <JFXButton layoutX="55.0" layoutY="446.0" onAction="#openReg" text="Register New User" textFill="#a0a2ab" />
+      <JFXButton layoutX="68.0" layoutY="29.0" onAction="#handleListButtonAction" opacity="0.0" prefHeight="128.0" prefWidth="128.0" text=" " />
+      <ImageView fitHeight="110.0" fitWidth="146.0" layoutX="229.0" layoutY="221.0" pickOnBounds="true" preserveRatio="true"> <image>
+            <Image url="@book-flat.png" />
+         </image>
+      </ImageView>
+      <JFXButton fx:id="add" layoutX="236.0" layoutY="344.0" onAction="#add" text="Add New Book" textFill="#c6b9b9" />
+      <JFXButton layoutX="255.0" layoutY="158.0" onAction="#logout" text="Log Out" textFill="WHITE" />
+   </children>
+</AnchorPane>
